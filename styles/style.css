@@ -49,7 +49,7 @@ h2.titulo span {
     color: #FF3131;
 }
 
-button:hover {
+button:hover, form .btn-enviar input:hover {
     box-shadow: 0px 0px 8px #FF3131;
     transform: scale(1.1);
 }
@@ -192,7 +192,7 @@ section.sobre .flex {
     text-align: justify;
 }
 
-.sobre .txt-sobre .btn-social button {
+.btn-social button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -252,4 +252,79 @@ section.portifolio .flex {
 
 .overlay:hover {
     opacity: 1;
+}
+
+/* ESTILO DO FORMULARIO */
+
+section.formulario {
+    padding:80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: rgb(58, 57, 57);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    height: 150px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 150px;
+    background-color: #FF3131;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* ESTILO RODAPÉ */
+
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.142)
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #FF3131;
+}
+
+footer .line-footer p i {
+    color: #FF3131;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: white;
+    text-decoration: none;
 }
